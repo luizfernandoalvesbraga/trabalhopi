@@ -1,0 +1,19 @@
+<% include header.ejs %>
+
+<form action="/calcular" method="post">
+	<input type="hidden" name="operacao" value="<%- operacao %>" />
+	<center>
+    <label>Quantidade de Parcelas  </label>
+	<input type="text" name="quantidade" size="5"/> <br><br>
+	<input type="submit" class = calc value="Calcular" />
+    </center>
+</form>
+
+<% if(typeof(resultado) != 'undefined') { %>
+	<p>Valor de cada parcela: R$ <%= resultado %>.</p>
+<% } %>
+<br/>
+<br/>
+<center><a href="/">Voltar</a></center>
+
+<% include footer.ejs%>
