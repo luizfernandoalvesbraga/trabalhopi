@@ -25,7 +25,9 @@
     "istanbul": "^0.3.17"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "should": "^6.0.3"
+      "angular": "^1.4.1",
+      "mocha": "^2.2.5",
+      "protractor": "^2.1.0",
+      "should": "^6.0.3"
   }
 }
